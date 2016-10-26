@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Login Page</title>
+<style>
+body {color: #3f312e; background: #D8D8D8; font:14px Helvetica, Arial, Sans-serif; }
+a { color: #4f4f4f; }
+#navigation { width: 960px; margin: 0 auto; position: relative; top: 4px; }
+#navigation ul { margin: 0; padding: 0; list-style-type: none; overflow: hidden; background-color: #333333; }
+#navigation ul li { display: inline; margin-right: 3px; float: left; }
+#navigation ul li a { display: block; color:white; text-align: center; padding: 10px 10px 6px 10px; text-transform: uppercase; text-decoration: none; }
+#navigation ul li a:hover { background-color: #111111; }
+#container { overflow: auto; width: 960px; margin:0 auto; padding: 30px; }
+#content { width: 960px; min-height: 500px; margin 0 auto; background: #fff; overflow: auto; }
+#contentleft { width: 580px; float: left; margin-right: 20px; padding: 20px; }
+contentleft h1 { font-size: 24px; margin-top: 0; }
+#sidebar { width: 280px; float: left; padding: 20px; }
+#sidebar-element { overflow: auto; margin-top: 15px; }
+#sidebar h2 { color: #fff; background: #53777a; padding: 7px 10px; text-transform: uppercase; font-size: 14px; }
+#sidebar ul li {margin: 0 0 7px 0; }
+#footer { width: 960px; margin: 0 auto; text-align: center }
+#footer ul { margin: 15px 0 0 0; padding: 0; list-style-type: none; }
+#footer ul li { display: inline; margin-right: 5px; }
+#footer ul li a { text-transform: uppercase; text-decoration: none; }
+#footer ul li a:hover {text-decoration: underline; }
+#footer p { font-weight: bold; }
+</style>
+</head>
+<body>
+
+<div id="navigation">
+
+  <ul>
+   <li><a href="home">Home</a></li>
+   <li><a href="about">About</a></li>
+   <li><a href="contact">Contact</a></li>
+  </ul>
+
+</div>
+
+<div id="container">
+<div id="content">
+<div id="contentleft">
+  <h1>Please login</h1>
+  <br>
+  <form action="" method="post">
+    <input type="text" placeholder="Username" name="username" value="{{
+    request.form.username }}">
+    <input type="password" placeholder="Password" name="password" value="{{
+    request.form.password }}">
+    <input class="btn btn-default" type="submit" value="Login">
+    </form>
+</div>
+
+<div id="sidebar">
+<div class="sidebar-element">
+<h2>About</h2>
+<p>We are a website dedicated to inform people about what's new to the movie's indusry</p>
+</div>
+
+<div class="sidebar-element">
+<h2>Contact</h2>
+<p>Contact us by email at qwerty@gmail.com or call at 07800000000</p>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div id="footer">
+  <ul>
+    <li><a href="home">Home</a></li>
+    <li><a href="about">About</a></li>
+    <li><a href="contact">Contact</a></li>
+  </ul>
+</div>
+</body>
+
+</head>
+</html>
