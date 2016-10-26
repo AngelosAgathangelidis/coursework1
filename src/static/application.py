@@ -52,5 +52,13 @@ def pulpfiction():
 def fightclub():
   return render_template('fightclub.html'), 200
 
+@app.route('/force404')
+def force404():
+  abort(404)
+  
+@app.errorhandler(404)
+def page_not_found(error):
+  return "The page you requested doesn't exist.", 404
+
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)
